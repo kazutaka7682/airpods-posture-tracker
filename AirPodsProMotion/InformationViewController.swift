@@ -1,8 +1,9 @@
 //
-//  ViewController.swift
-//  AirPodsProMotion
+//  InformationViewController.swift
 //
-//  Created by Yoshio on 2020/09/22.
+//  I created InformationViewController with reference to the following repositories and articles.
+//  GitHub          : https://github.com/tukuyo/AirPodsPro-Motion-Sampler
+//  Article (Qiita) : https://qiita.com/tukutuku_tukuyo/items/ea949ee2dbb499d6e7ca
 //
 
 import UIKit
