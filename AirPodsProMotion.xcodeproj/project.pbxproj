@@ -19,7 +19,6 @@
 		8EB3738B2527649700B9B3C0 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3738A2527649700B9B3C0 /* TopViewController.swift */; };
 		8EF9EA05251B690C00D239C4 /* SK3DViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EF9EA04251B690C00D239C4 /* SK3DViewController.swift */; };
 		DC2E8A55287C2D2C00894EAD /* desert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = DC2E8A54287C2D2C00894EAD /* desert.jpg */; };
-		DC2E8A57287C2E3900894EAD /* 1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = DC2E8A56287C2E3900894EAD /* 1.jpeg */; };
 		DC36F192287EB5C8003FFF38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC36F191287EB5C8003FFF38 /* ViewController.swift */; };
 		DC36F194287EB609003FFF38 /* 和太鼓でドン.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DC36F193287EB609003FFF38 /* 和太鼓でドン.mp3 */; };
 		DC7A9A172887E67D00F8994A /* appear2.wav in Resources */ = {isa = PBXBuildFile; fileRef = DC7A9A162887E67D00F8994A /* appear2.wav */; };
@@ -40,8 +39,7 @@
 		8EB3738525275C8600B9B3C0 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		8EB3738A2527649700B9B3C0 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		8EF9EA04251B690C00D239C4 /* SK3DViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SK3DViewController.swift; sourceTree = "<group>"; };
-		DC2E8A54287C2D2C00894EAD /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = desert.jpg; path = "../../M1前期/イノベーションプロジェクト/desert.jpg"; sourceTree = "<group>"; };
-		DC2E8A56287C2E3900894EAD /* 1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 1.jpeg; path = "../../M1前期/イノベーションプロジェクト/1.jpeg"; sourceTree = "<group>"; };
+		DC2E8A54287C2D2C00894EAD /* desert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = desert.jpg; sourceTree = "<group>"; };
 		DC36F191287EB5C8003FFF38 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DC36F193287EB609003FFF38 /* 和太鼓でドン.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "和太鼓でドン.mp3"; sourceTree = "<group>"; };
 		DC7A9A162887E67D00F8994A /* appear2.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = appear2.wav; sourceTree = "<group>"; };
@@ -91,7 +89,6 @@
 				DC7A9A1A2887EBDE00F8994A /* omoide.caf */,
 				DC7A9A1B2887ED5A00F8994A /* appear2.caf */,
 				DC7A9A162887E67D00F8994A /* appear2.wav */,
-				DC2E8A56287C2E3900894EAD /* 1.jpeg */,
 				DC2E8A54287C2D2C00894EAD /* desert.jpg */,
 				8EB3739025276E3100B9B3C0 /* Supporting Files */,
 				8E4A85E1251A37610077CDAC /* Assets.xcassets */,
@@ -175,7 +172,6 @@
 				DC36F194287EB609003FFF38 /* 和太鼓でドン.mp3 in Resources */,
 				DC7A9A172887E67D00F8994A /* appear2.wav in Resources */,
 				DC7A9A192887E72E00F8994A /* omoide.mp3 in Resources */,
-				DC2E8A57287C2E3900894EAD /* 1.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
