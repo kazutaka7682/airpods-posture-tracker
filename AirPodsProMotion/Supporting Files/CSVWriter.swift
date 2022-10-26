@@ -1,11 +1,10 @@
 //
 //  CSVWriter.swift
 //
-//  I created CSVWriter with reference to the following repositories and articles (in Japanese).
-//  GitHub         : https://github.com/yorifuji/CMHeadphoneMotionManager-Sampler
-//  Article (Zenn) : https://zenn.dev/yorifuji/articles/1632a1d8ff6f3b98c134
+//  "CSVWriter" was created based on the following repositories and articles.
+//  GitHub          : https://github.com/tukuyo/AirPodsPro-Motion-Sampler
+//  Article (Qiita) : https://qiita.com/tukutuku_tukuyo/items/ea949ee2dbb499d6e7ca
 //
-
 import Foundation
 import CoreMotion
 

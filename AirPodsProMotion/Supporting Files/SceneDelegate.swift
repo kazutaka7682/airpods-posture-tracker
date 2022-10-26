@@ -1,7 +1,7 @@
 //
 //  SceneDelegate.swift
 //
-//  I created SceneDelegate with reference to the following repositories and articles.
+//  "SceneDelegate" was created based on the following repositories and articles.
 //  GitHub          : https://github.com/tukuyo/AirPodsPro-Motion-Sampler
 //  Article (Qiita) : https://qiita.com/tukutuku_tukuyo/items/ea949ee2dbb499d6e7ca
 //
