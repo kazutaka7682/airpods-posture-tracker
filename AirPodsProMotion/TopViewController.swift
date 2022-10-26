@@ -20,7 +20,7 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
         table.translatesAutoresizingMaskIntoConstraints = false
         return table
     }()
-    private var items: [UIViewController] = [InformationViewController(), SK3DViewController(), ViewController(), ExportCSVViewController()]
+    private var items: [UIViewController] = [InformationViewController(), SK3DViewController(), BLEViewController(), ExportCSVViewController()]
     private var itemTitle: [String] = ["Information View", "Rotate the Cube View", "BLE", "Export CSV file"]
     
     

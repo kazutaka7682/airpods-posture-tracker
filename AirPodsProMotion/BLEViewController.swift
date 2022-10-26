@@ -9,7 +9,7 @@
 import UIKit
 import CoreBluetooth
  
-class ViewController: UIViewController, CBCentralManagerDelegate {
+class BLEViewController: UIViewController, CBCentralManagerDelegate {
     
     lazy var textView: UITextView = {
         let view = UITextView()
