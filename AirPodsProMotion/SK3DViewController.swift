@@ -35,7 +35,7 @@ class SK3DViewController: UIViewController, CMHeadphoneMotionManagerDelegate {
         super.viewDidLoad()
         
         self.view.backgroundColor = .systemBackground
-        self.title = "Motion Capture"
+        self.title = "姿勢追従3Dアニメーション"
         
         APP.delegate = self
 
@@ -60,7 +60,7 @@ class SK3DViewController: UIViewController, CMHeadphoneMotionManagerDelegate {
             } else {
                 counter = 0
             }
-            if (counter >= 100) { // 悪姿勢が行って時間以上続いているとき
+            if (counter >= 100) { // 悪姿勢が一定時間以上続いているとき
                 goodOrBad = false
                 counter = 0
             }
@@ -131,7 +131,6 @@ class SK3DViewController: UIViewController, CMHeadphoneMotionManagerDelegate {
     }
 }
 
-// SceneKit
 extension SK3DViewController {
     
     func SceneSetUp() {
@@ -141,18 +140,16 @@ extension SK3DViewController {
         scnView.showsStatistics = true
         view.addSubview(scnView)
 
-        // Set SCNScene to SCNView
+        // SCNSceneをSCNViewにセット
         let scene = SCNScene()
         scnView.scene = scene
-        scene.background.contents = UIImage(named: "desert.jpg")
-
-        // Adding a camera to a scene
+        //scene.background.contents = UIImage(named: "desert.jpg")
+        
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
         cameraNode.position = SCNVector3(x: 0, y: 0, z: 15)
         scene.rootNode.addChildNode(cameraNode)
 
-        // Adding an omnidirectional light source to the scene
         let omniLight = SCNLight()
         omniLight.type = .omni
         let omniLightNode = SCNNode()
@@ -160,7 +157,6 @@ extension SK3DViewController {
         omniLightNode.position = SCNVector3(x: 0, y: 10, z: 10)
         scene.rootNode.addChildNode(omniLightNode)
 
-        // Adding a light source to your scene that illuminates from all directions.
         let ambientLight = SCNLight()
         ambientLight.type = .ambient
         ambientLight.color = UIColor.darkGray
@@ -168,7 +164,6 @@ extension SK3DViewController {
         ambientLightNode.light = ambientLight
         scene.rootNode.addChildNode(ambientLightNode)
     
-        // Adding a cube(face) to a scene
         let cube:SCNGeometry = SCNPyramid(width: 4, height: 3.7, length: 4)//, chamferRadius: 0.5)
         cube.firstMaterial?.diffuse.contents  = UIColor(red: 196.0 / 255.0, green: 169.0 / 255.0, blue: 133.0 / 255.0, alpha: 1)
         let eye:SCNGeometry = SCNSphere(radius: 0.3)
@@ -224,4 +219,5 @@ extension SK3DViewController {
         cubeNode.position = SCNVector3(x: 0, y: -0.7, z: 0.2)
         scene.rootNode.addChildNode(cubeNode)
     }
+    
 }

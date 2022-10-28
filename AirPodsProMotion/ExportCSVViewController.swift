@@ -46,11 +46,9 @@ class ExportCSVViewController: UIViewController, CMHeadphoneMotionManagerDelegat
     
     var write: Bool = false
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Information View"
+        self.title = "加速度センサ情報"
         view.backgroundColor = .systemBackground
         view.addSubview(button)
         view.addSubview(textView)

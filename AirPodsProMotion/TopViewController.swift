@@ -21,20 +21,18 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
         return table
     }()
     private var items: [UIViewController] = [InformationViewController(), SK3DViewController(), BLEViewController(), ExportCSVViewController()]
-    private var itemTitle: [String] = ["Information View", "Rotate the Cube View", "BLE", "Export CSV file"]
-    
+    private var itemTitle: [String] = ["加速度センサ情報", "姿勢追従3Dアニメーション", "Bluetooth受信", "センサ情報CSV化"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "AirPodsProMotion Sampler"
+        self.title = "AirPodsPro加速度センサの使用"
         
         table.dataSource = self
         table.delegate = self
         view.addSubview(table)
 
     }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return items.count
@@ -45,7 +43,6 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
         cell.textLabel?.text = itemTitle[indexPath.row]
         return cell
     }
-    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)

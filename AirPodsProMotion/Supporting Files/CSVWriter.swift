@@ -5,6 +5,7 @@
 //  GitHub          : https://github.com/tukuyo/AirPodsPro-Motion-Sampler
 //  Article (Qiita) : https://qiita.com/tukutuku_tukuyo/items/ea949ee2dbb499d6e7ca
 //
+
 import Foundation
 import CoreMotion
 

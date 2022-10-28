@@ -27,7 +27,7 @@ class InformationViewController: UIViewController, CMHeadphoneMotionManagerDeleg
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.title = "Information View"
+        self.title = "加速度センサ情報"
         view.backgroundColor = .systemBackground
         view.addSubview(textView)
         
@@ -84,4 +84,5 @@ class InformationViewController: UIViewController, CMHeadphoneMotionManagerDeleg
                 \(data.heading)
             """
     }
+    
 }
