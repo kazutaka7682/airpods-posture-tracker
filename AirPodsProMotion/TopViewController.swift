@@ -21,7 +21,7 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
         return table
     }()
     private var items: [UIViewController] = [InformationViewController(), SK3DViewController(), BLEViewController(), ExportCSVViewController()]
-    private var itemTitle: [String] = ["加速度センサ情報", "姿勢追従3Dアニメーション", "Bluetooth受信", "センサ情報CSV化"]
+    private var itemTitle: [String] = ["加速度センサ情報", "姿勢追従3Dアニメーション", "周囲Bluetooth受信", "センサ情報CSV化"]
     
     override func viewDidLoad() {
         super.viewDidLoad()

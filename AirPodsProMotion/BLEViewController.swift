@@ -20,17 +20,17 @@ class BLEViewController: UIViewController, CBCentralManagerDelegate {
         // CentralManager 初期化
         centralManager = CBCentralManager(delegate: self, queue: nil, options: nil)
         super.viewDidLoad()
-        
+        self.title = "周囲Bluetooth受信"
+        view.backgroundColor = .gray
+        centralManager.delegate = self
     }
  
     override func viewWillDisappear(_ animated: Bool) {
         centralManager.stopScan()
         print("Scanning stopped")
-        
         super.viewWillDisappear(animated)
     }
     
-    // CentralManager status
     func centralManagerDidUpdateState(_ central: CBCentralManager) {
         switch central.state {
         case .poweredOn:
