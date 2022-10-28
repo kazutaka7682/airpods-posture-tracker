@@ -1,1 +1,1 @@
-# PostureDetection-AirPodPro
+# PostureDetection-AirPodsProAPI
