@@ -85,6 +85,7 @@ class SK3DViewController: UIViewController, CMHeadphoneMotionManagerDelegate {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         APP.stopDeviceMotionUpdates()
+        player?.stop()
     }
     
     func NodeRotate(_ motion: CMDeviceMotion) {
@@ -143,7 +144,7 @@ extension SK3DViewController {
         // SCNSceneをSCNViewにセット
         let scene = SCNScene()
         scnView.scene = scene
-        //scene.background.contents = UIImage(named: "desert.jpg")
+        scene.background.contents = UIImage(named: "desert.jpg")
         
         let cameraNode = SCNNode()
         cameraNode.camera = SCNCamera()
