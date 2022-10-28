@@ -26,7 +26,7 @@ class TopViewController: UIViewController, UITableViewDataSource, UITableViewDel
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = "AirPodsPro加速度センサの使用"
+        self.title = "AirPodsPro加速度センサAPIデモ"
         
         table.dataSource = self
         table.delegate = self
