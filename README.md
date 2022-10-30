@@ -1,5 +1,5 @@
 # PostureDetection-AirPodsProAPI
-In this repository, we developed an application that detects posture and encourages posture improvement using an API that can acquire sensor information from AirPodsPro.
+In this repository,  developed an application that detects posture and encourages posture improvement using an API that can acquire sensor information from AirPodsPro.
 
 Specifically, it acquires the acceleration sensor information in AirPodsPro and reflects it to the 3D character in real time.
 
